@@ -1,0 +1,145 @@
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-09-11 11:41:18
+  from 'D:\php2006\server\mvc\application\template\admin\index.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5f5b625e1699b2_98278286',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '08d3aae461866d7b90a56c750f91f52e855621bf' => 
+    array (
+      0 => 'D:\\php2006\\server\\mvc\\application\\template\\admin\\index.html',
+      1 => 1599824440,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5f5b625e1699b2_98278286 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body,html{
+            height:95%;width: 100%;
+            background: #d0e9c6;
+        }
+        body{
+            margin: 0;padding: 0;
+            overflow: hidden;
+        }
+        ul,li{
+            margin: 0;list-style: none;
+
+        }
+        a{
+            text-decoration: none;
+            color: #9dd526;
+            font-size: 20px;
+        }
+        .header{
+            width:100%;min-height:20%;background: #9dd526;
+            text-align: center;padding-top:65px;box-sizing: border-box;
+
+        }
+        .main{
+            margin-top: 0;
+            width:100%;height:80%;
+            border: 1px solid #04332b;
+        }
+        .left{
+
+            width:20%;height: 100%;border-right:1px solid #04332b ;box-sizing: border-box;float: left;
+        }
+        .right{
+            width:80%;height: 100%;
+            float: left;
+        }
+        .bottom{
+            width:100%;min-height:10%;text-align: center;
+            padding-top: 30px;
+            background: #9dd526;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .bottom span{
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            marign:auto;
+
+        }
+        .logininfo{
+            font-size: 20px;
+            float:right;
+            margin-right: 40px;
+            font-weight: bold;
+        }
+    /*首页和内容页*/
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="header">
+    <h1 style="color: #04332b">欢迎来到xx后台管理系统</h1>
+    <div class="logininfo">
+        <span >用户:<?php echo $_smarty_tpl->tpl_vars['uname']->value;?>
+</span>
+        <div style="margin-top: 10px">
+        <span ><a href=" <?php echo ENTRY_ADD;?>
+/admin/index/logout" style="color: #04332b;">退出登陆
+        </a></span></div>
+    </div>
+</div>
+<div class="main">
+    <div class="left">
+
+        <ul style="font-size: 25px;margin-top: 70px">
+            <li>
+                用户管理>
+                <ul>
+                    <li><a href="/mvc/application/template/admin/adduser.html" target="main">查看用户</a>
+                    <li><a href="/mvc/application/template/admin/edituser.html" target="main">修改用户</a>
+                </ul>
+
+            <li>
+                栏目管理>
+                <ul>
+                    <li><a href="/mvc/index.php/admin/category/" target="main">查看栏目</a>
+                    <li><a href="/mvc/index.php/admin/category/addpage" target="main">添加栏目</a>
+
+                </ul>
+
+            <li>
+                内容管理>
+                <ul>
+                    <li><a href="<?php echo ENTRY_ADD;?>
+/admin/content/add" target="main">添加内容</a>
+                    <li><a href="<?php echo ENTRY_ADD;?>
+/admin/contentowlist" target="main">查看内容</a>
+                </ul>
+
+        </ul>
+
+    </div>
+<!--    在right中添加窗口-->
+    <div class="right">
+        <iframe src="" frameborder="0" name="main" style="width: 100%;height: 100%"></iframe>
+    </div>
+</div>
+<div class="bottom">
+    <span>XXX版权信息| XXX制作| 联系电话:XXXXXXXXXX</span>
+</div>
+</body>
+</html><?php }
+}

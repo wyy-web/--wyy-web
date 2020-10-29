@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单</title>
+   <link rel="stylesheet" href="{CSS_ADD}index/menu.css">
+</head>
+<body>
+    <nav>
+        <ul class="cd-primary-nav">
+<!--        <li><a href="/mvc/index.php/index/index/int">首页</a></li>-->
+            {foreach $cateData as $v}
+            <li><a href="{$v['tpl_name']}">{$v["cname"]}</a></li>
+            {/foreach}
+                </ul>
+      </nav>
+      <div class="cd-overlay-nav"><span></span></div>
+      <div class="cd-overlay-content"><span></span></div>
+      <div class="cl"></div>
+</body>
+</html>

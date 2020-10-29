@@ -1,0 +1,21 @@
+
+.form-horizontal{
+    background-color: #f8dede;
+    width:500px;
+    height:260px;
+    box-shadow: 0 0 10px #e4b9c0;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    /*background:url(../../../static/img/15.png);*/
+}
+.form-horizontal h1{
+    font-size: 18px;
+    text-align: center;
+
+}
